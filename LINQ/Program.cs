@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var videogames = new List<string>() { " Mario Kart,", "The Witcher", "Dark Souls", "Smash Bros.", "Fighters Z" };
+
+            var longnames = videogames.OrderBy(videogames => videogames).ToList();
+
+            foreach (var name in longnames)
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }
