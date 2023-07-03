@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            var videogames = new List<string>() { " Mario Kart,", "The Witcher", "Dark Souls", "Smash Bros.", "Fighters Z" };
+            var videogames = new List<string>() { "Mario Kart,", "The Witcher", "Dark Souls", "Smash Bros.", "Fighters Z" };
 
-            var longnames = videogames.OrderBy(videogames => videogames).ToList();
+            var longnames = videogames.OrderBy(videogames => videogames.Length).ToList();
 
             foreach (var name in longnames)
             {
